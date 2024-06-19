@@ -6,11 +6,11 @@ require_relative "lib/custom_download_strategy"
 class BigmileCli < Formula
   desc ""
   homepage "https:/bigmile.eu"
-  version "0.8"
+  version "1.0"
 
   on_macos do
-    url "https://github.com/mikkurogue/bigmile-cli/releases/download/v0.8/bigmile-cli_0.8_darwin_all.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "304aeba9499a7092076a1e9c661b730ecdb453933108a6bdf6c67e1dab93c776"
+    url "https://github.com/mikkurogue/bigmile-cli/releases/download/1.0/bigmile-cli_1.0_darwin_all.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "dd504ac820b3504d20ae05e89c1898175c25406e7993bc180cf4eccb37f9268d"
 
     def install
       bin.install "bigmile-cli"
@@ -20,8 +20,8 @@ class BigmileCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mikkurogue/bigmile-cli/releases/download/v0.8/bigmile-cli_0.8_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-        sha256 "37f0933b159f86c648194dcbd42f5a4ea55d48102311e99432d0c937b3e212fe"
+        url "https://github.com/mikkurogue/bigmile-cli/releases/download/1.0/bigmile-cli_1.0_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        sha256 "d2ac9c3b56fd0c7eb66dbc500c73e68d6be7173a247decaa54f8c61ae58178ef"
 
         def install
           bin.install "bigmile-cli"
@@ -30,8 +30,8 @@ class BigmileCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mikkurogue/bigmile-cli/releases/download/v0.8/bigmile-cli_0.8_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-        sha256 "38dfdc77c8bd99bdb40690b0131aeb72a3cf1774cd74d7d7b67e493ac1b31835"
+        url "https://github.com/mikkurogue/bigmile-cli/releases/download/1.0/bigmile-cli_1.0_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        sha256 "b9cf10b6001d7822f7839c584dd364ce6689d01009c1ed22269da95dd3244e96"
 
         def install
           bin.install "bigmile-cli"
