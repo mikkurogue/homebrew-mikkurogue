@@ -5,11 +5,11 @@
 class BigmileCli < Formula
   desc ""
   homepage "https:/bigmile.eu"
-  version "0.5"
+  version "0.6"
 
   on_macos do
-    url "https://github.com/mikkurogue/bigmile-cli/releases/download/v0.5/bigmile-cli_0.5_darwin_all.tar.gz"
-    sha256 "2a5201b84ba3a6eff3de378b4324dbfdde5eeb15af9ffe686dc84cd2c9433354"
+    url "https://github.com/mikkurogue/bigmile-cli/releases/download/v0.6/bigmile-cli_0.6_darwin_all.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "d99edcf7d1d4d93fe86f34191b6557436657a7890c1fbc4fe21b2309a22dea25"
 
     def install
       bin.install "bigmile-cli"
@@ -19,8 +19,8 @@ class BigmileCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mikkurogue/bigmile-cli/releases/download/v0.5/bigmile-cli_0.5_linux_amd64.tar.gz"
-        sha256 "cff9702674943b06d786537202adabc4c7fb4f08af3c243f2bd8f27ea4aa9831"
+        url "https://github.com/mikkurogue/bigmile-cli/releases/download/v0.6/bigmile-cli_0.6_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        sha256 "bcf1943140b23ea0c7d5fbb6e3343a6e68c2fbc541029e6785097d9c7a125827"
 
         def install
           bin.install "bigmile-cli"
@@ -29,8 +29,8 @@ class BigmileCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mikkurogue/bigmile-cli/releases/download/v0.5/bigmile-cli_0.5_linux_arm64.tar.gz"
-        sha256 "f3c4f182a19028bbd8f82ccd9da1c77b696a65ed95c295065c18afbd605f6879"
+        url "https://github.com/mikkurogue/bigmile-cli/releases/download/v0.6/bigmile-cli_0.6_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        sha256 "7281848fb6a6cf0cef5bb32086ed7086809a228ce2eb77fa8cfb6a094bbb17b6"
 
         def install
           bin.install "bigmile-cli"
