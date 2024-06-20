@@ -5,11 +5,11 @@
 class Dagger < Formula
   desc ""
   homepage "https://github.com/mikkurogue/dagger-cli"
-  version "1.1.2"
+  version "1.1.3"
 
   on_macos do
-    url "https://github.com/mikkurogue/Dagger-CLI/releases/download/1.1.2/Dagger-CLI_1.1.2_darwin_all.tar.gz"
-    sha256 "447f890d30c7bd961a74c3c98de8ae0e68f5dcad01f1dd67a64e4754dd2e6a27"
+    url "https://github.com/mikkurogue/Dagger-CLI/releases/download/1.1.3/Dagger-CLI_1.1.3_darwin_all.tar.gz"
+    sha256 "a68fb32cdbf4415e5a0854ed19e089e7d43aa8546160047e1420ada06b424de7"
 
     def install
       bin.install "Dagger-CLI"
@@ -19,8 +19,8 @@ class Dagger < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mikkurogue/Dagger-CLI/releases/download/1.1.2/Dagger-CLI_1.1.2_linux_amd64.tar.gz"
-        sha256 "173f52bb55ddd04b980421210112313273fa490d74337c355d65802a314c2b4b"
+        url "https://github.com/mikkurogue/Dagger-CLI/releases/download/1.1.3/Dagger-CLI_1.1.3_linux_amd64.tar.gz"
+        sha256 "b75807c81ed1166c9d00fc92867471a4fee5b311485085137028ddd6928b32db"
 
         def install
           bin.install "dagger"
@@ -29,8 +29,8 @@ class Dagger < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mikkurogue/Dagger-CLI/releases/download/1.1.2/Dagger-CLI_1.1.2_linux_arm64.tar.gz"
-        sha256 "99872d720cc52be20d0f981190cbd8293a6f51eeea0d02a04742d2c1a38a898c"
+        url "https://github.com/mikkurogue/Dagger-CLI/releases/download/1.1.3/Dagger-CLI_1.1.3_linux_arm64.tar.gz"
+        sha256 "cbfa9fffc7a4048782908353882a8b27373207c39ac9b0162dc04b401fa50ab6"
 
         def install
           bin.install "dagger"
