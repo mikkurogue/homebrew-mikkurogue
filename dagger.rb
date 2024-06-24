@@ -5,11 +5,11 @@
 class Dagger < Formula
   desc ""
   homepage "https://github.com/mikkurogue/dagger"
-  version "1.1.12"
+  version "1.1.13"
 
   on_macos do
-    url "https://github.com/mikkurogue/dagger/releases/download/1.1.12/dagger_1.1.12_darwin_all.tar.gz"
-    sha256 "4ac231015b73347bd09ec84956ad242e0fe7203be7496ac10cad3f821a607c1f"
+    url "https://github.com/mikkurogue/dagger/releases/download/1.1.13/dagger_1.1.13_darwin_all.tar.gz"
+    sha256 "0b7177e8cde34d70e920d6215586d6a166a9866990b7e71fd20ee313adc59a3c"
 
     def install
       bin.install "dagger"
@@ -19,8 +19,8 @@ class Dagger < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mikkurogue/dagger/releases/download/1.1.12/dagger_1.1.12_linux_amd64.tar.gz"
-        sha256 "c361fdbb0a958836002791fddb420f10f30e4b5ff923564fd175ced29218ad22"
+        url "https://github.com/mikkurogue/dagger/releases/download/1.1.13/dagger_1.1.13_linux_amd64.tar.gz"
+        sha256 "8f6a10c64558db7f65a7bf90816a1ca03c57eab3129f7b23dfbbe39af0e037e0"
 
         def install
           bin.install "dagger"
@@ -29,8 +29,8 @@ class Dagger < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mikkurogue/dagger/releases/download/1.1.12/dagger_1.1.12_linux_arm64.tar.gz"
-        sha256 "eb5e9338d8b83432f4b57b16377e5b9aab852dc1860f9853f43dbe9f0715c51c"
+        url "https://github.com/mikkurogue/dagger/releases/download/1.1.13/dagger_1.1.13_linux_arm64.tar.gz"
+        sha256 "787c7b58f8272be86dd9a250f6863d0b51af0c0179c80b2289656269cafe7243"
 
         def install
           bin.install "dagger"
